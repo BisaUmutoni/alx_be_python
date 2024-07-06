@@ -1,53 +1,30 @@
-#empty list
-shopping_list = []
+def display_menu():
+    print("Shopping List Manager")
+    print("1. Add Item")
+    print("2. Remove Item")
+    print("3. View List")
+    print("4. Exit")
 
-# Function to add an item to the shopping list
-def add_item():
-    item = input("Enter the item to add: ")
-    shopping_list.append(item)
-    print(f"{item} added to the shopping list.")
-
-# Function to remove an item from the shopping list
-def remove_item():
-    item = input("Enter the item to remove: ")
-    if item in shopping_list:
-        shopping_list.remove(item)
-        print(f"{item} removed from the shopping list.")
-    else:
-        print(f"{item} is not in the shopping list.")
-
-# Function to view the current shopping list
-def view_list():
-    if shopping_list:
-        print("Shopping List:")
-        for item in shopping_list:
-            print(item)
-    else:
-        print("Shopping List is empty.")
-
-# Main loop to display the menu and process user input
 def main():
+    shopping_list = []
     while True:
-        print("\nShopping List Manager")
-        print("1. Add an item")
-        print("2. Remove an item")
-        print("3. View the list")
-        print("4. Exit")
-        
-        choice = input("Enter your choice (1-4): ")
-        
+        display_menu()
+        choice = input("Enter your choice: ")
+
         if choice == '1':
-            add_item()
+            # Prompt for and add an item
+            pass
         elif choice == '2':
-            remove_item()
+            # Prompt for and remove an item
+            pass
         elif choice == '3':
-            view_list()
+            # Display the shopping list
+            pass
         elif choice == '4':
-            print("Exiting the program...")
+            print("Goodbye!")
             break
         else:
-            print("Invalid choice. Please enter a number from 1 to 4.")
+            print("Invalid choice. Please try again.")
 
 if __name__ == "__main__":
     main()
-

@@ -1,4 +1,3 @@
-# explore_datetime.py
 import datetime
 
 # Function to display current date and time

@@ -17,7 +17,7 @@ class PrintBook(Book):
             super().__init__(title, author)
             self.page_count = int (page_count)
         def __str__(self):
-         return f"rintBook: {self.title}, {self.author}, {self.page_count}"
+         return f"PrintBook: {self.title}, {self.author}, Page Count: {self.page_count}"
             
 class Library:
     def __init__(self):

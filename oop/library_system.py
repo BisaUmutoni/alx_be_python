@@ -1,9 +1,12 @@
 class Book:
     def __init__(self, title, author):
-        self.title = str (title)
-        self.author = str (author)
+            self.title = str (title)
+            self.author = str (author)
     def __str__(self):
-        return f"Book: {self.title} by {self.author}"
+        try:
+            return f"Book: {self.title} by {self.author}"
+        except Exception as e:
+            print (f"The book is not available: {e}")
         
 class EBook(Book):
         def __init__(self, title, author, file_size):
@@ -29,3 +32,5 @@ class Library:
     def list_books(self):
         for book in self.books:
             print(book)
+
+    

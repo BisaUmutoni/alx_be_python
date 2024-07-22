@@ -14,7 +14,7 @@ class EBook(Book):
             self.file_size = int(file_size)
         def __str__(self):
             try:
-                return f"Ebook: {self.title} by {self.author}, File Size: {self.file_size}KB"
+                return f"EBook: {self.title} by {self.author}, File Size: {self.file_size}KB"
             except Exception as e:
                 print (f"The book is not available: {e}")
 
